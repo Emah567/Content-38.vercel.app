@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centered Iframe with Shadow</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #fff;
+        }
+
+        iframe {
+            width: 90%;
+            height: 35%;
+            box-shadow: rgba(0, 0, 0, 0.45) 0px 65px 50px -50px;
+            border: none;
+            transition: box-shadow 0.3s ease;
+            overflow: hidden;
+            border-radius: 1rem;
+        }
+
+        iframe:hover {
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+        }
+    </style>
+</head>
+<body>
+    <iframe src="https://e38.vercel.app/" sandbox="allow-same-origin allow-scripts allow-popups allow-forms"></iframe>
+</body>
+</html>
